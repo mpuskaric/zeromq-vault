@@ -1,5 +1,5 @@
 # zeromq-vault
-zeromq exercises
+simple client-server with serialization. Check subfolders for other projects
 
 Prerequisites: msgpack, libzmq, cppzmq 
 
