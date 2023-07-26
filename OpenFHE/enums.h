@@ -61,22 +61,22 @@ void get_subject(message state, char (&sub)[10])
 			break;
 			
 		case R_PubKey:
-			std::strcpy(sub, "ReqPublicK");
+			std::strcpy(sub, "ReqPubliK");
 			break;
 		case R_MultKey:
-			std::strcpy(sub, "ReqMultipK");
+			std::strcpy(sub, "ReqMultiK");
 			break;
 		case R_SummKey:
-			std::strcpy(sub, "ReqSummatK");
+			std::strcpy(sub, "ReqSummaK");
 			break;
 		case R_RotKey:
-			std::strcpy(sub, "ReqRotatiK");
+			std::strcpy(sub, "ReqRotatK");
 			break;
 		case R_CText:
-			std::strcpy(sub, "ReqCipherT");
+			std::strcpy(sub, "ReqCipheT");
 			break;
 		case R_CryptoC:
-			std::strcpy(sub, "ReqCryptoC");
+			std::strcpy(sub, "ReqCryptC");
 			break;
 			
 		default:
@@ -89,7 +89,6 @@ char* subject(message state)
 {
 	char* sub2 = new char[10];
 	char sub[10];
-	strcpy(sub2, "xxxxxxxxx");
 	get_subject(state, sub);
 	strcpy(sub2, sub);
 	return sub2;
